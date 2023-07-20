@@ -26,9 +26,9 @@ app.use(cors());
 //   console.log(`Example app listening at http://localhost:${port}`);
 // });
 
-// app.get('/',(req,res)=>{
-//     res.send('ok')
-// })
+app.get('/',(req,res)=>{
+    res.send('nurse app')
+})
 
 
 app.post('/update',async(req,res)=>{
