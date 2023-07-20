@@ -31,7 +31,7 @@ app.get('/',(req,res)=>{
 })
 
 
-app.post('/update',async(req,res)=>{
+app.post('/upload',async(req,res)=>{
     const {id,height,weight,datetocheck} = req.body
         const objectId = new ObjectId(id);
         await client.connect();
