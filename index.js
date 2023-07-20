@@ -12,7 +12,7 @@ const client = new MongoClient(process.env.MONGODB);
 
 
 const app = express();
-const port = process.env.PORT || 4000
+// const port = process.env.PORT || 4000
 
 
 app.use(express.json());
@@ -22,9 +22,9 @@ app.use(cors());
 
 
 
-app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`);
-});
+// app.listen(port, () => {
+//   console.log(`Example app listening at http://localhost:${port}`);
+// });
 
 app.get('/',(req,res)=>{
     res.send('ok')
