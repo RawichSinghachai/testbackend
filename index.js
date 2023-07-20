@@ -26,6 +26,10 @@ app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`);
 });
 
+app.get('/',(req,res)=>{
+    res.send('ok')
+})
+
 
 app.post('/update',async(req,res)=>{
     const {id,height,weight,datetocheck} = req.body
